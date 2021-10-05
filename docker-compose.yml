@@ -33,6 +33,7 @@ services:
       - dsw-server
     volumes:
       - ./dsw.yml:/app/config.yml:ro
+      - ./templates/dmp:/app/templates:ro
 
   postgres:
     image: postgres:13.2
