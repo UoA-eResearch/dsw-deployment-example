@@ -21,7 +21,7 @@ services:
     ports:
       - 8080:80
     environment:
-      API_URL: https://dswfortest.dswizard-uoa.cloud.edu.au:3443
+      API_URL: https://dsw.dswizard-uoa.cloud.edu.au:3443
 
   docworker:
     image: datastewardshipwizard/document-worker:3.3.0

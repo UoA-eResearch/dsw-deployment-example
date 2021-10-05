@@ -14,8 +14,8 @@ s3:
 
 mail:
   enabled: true
-  name: DSWizard-UoA_test
-  email: dswizard-uoa-test@auckland.ac.nz
+  name: DSWizard-UoA
+  email: dsw@auckland.ac.nz
   host: mailhost.auckland.ac.nz
   port: 465
   ssl: true
