@@ -71,6 +71,10 @@ services:
   proxy:
     image: nginx:stable
     container_name: proxy
+    restart: always
+    depends_on:
+      - dsw-server
+      - dsw-client
     ports:
       - 80:80 #< for certbot (otherwise redirected to 443)
       - 443:443 #< for client
