@@ -13,12 +13,24 @@ s3:
   bucket: engine-wizard
 
 mail:
-  enabled: false
-  name:
-  email:
-  host:
-  port:
-  ssl:
+  enabled: true
+  name: DSWizard-UoA_test
+  email: dswizard-uoa-test@auckland.ac.nz
+  host: mailhost.auckland.ac.nz
+  port: 465
+  ssl: true
   authEnabled:
   username:
   password:
+
+# docworker
+documents:
+  naming:
+    strategy: sanitize #uuid|slugify|sanitize
+
+externals:
+  pandoc:
+    executable: pandoc
+    args: --standalone
+  wkhtmltopdf:
+    executable: wkhtmltopdf
